@@ -1,13 +1,4 @@
-import {
-  Instagram,
-  Linkedin,
-  Mail,
-  MapPin,
-  Phone,
-  Send,
-  Twitch,
-  Twitter,
-} from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
@@ -38,7 +29,7 @@ export const ContactSection = () => {
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
           Have a project in mind or want to collaborate? Feel free to reach out.
-          I'm always open to discussing new opportunities.
+          I&apos;m always open to discussing new opportunities.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -56,10 +47,10 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Email</h4>
                   <a
-                    href="mailto:hello@gmail.com"
+                    href="mailto:itsraajjjuuuu@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    hello@gmail.com
+                    itsraajjjuuuu@gmail.com
                   </a>
                 </div>
               </div>
@@ -70,10 +61,10 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Phone</h4>
                   <a
-                    href="tel:+11234567890"
+                    href="tel:+918851406408"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +1 (123) 456-7890
+                    +91 8851406408
                   </a>
                 </div>
               </div>
@@ -84,7 +75,7 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Location</h4>
                   <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Vancouver, BC, Canada
+                    Delhi, India
                   </a>
                 </div>
               </div>
@@ -92,18 +83,24 @@ export const ContactSection = () => {
 
             <div className="pt-8">
               <h4 className="font-medium mb-4"> Connect With Me</h4>
-              <div className="flex space-x-4 justify-center">
-                <a href="#" target="_blank">
-                  <Linkedin />
+              <div className="flex space-x-6 justify-center">
+                <a
+                  href="https://www.linkedin.com/in/raju-gupta-871925280/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors"
+                  aria-label="LinkedIn Profile"
+                >
+                  <Linkedin className="h-7 w-7 text-primary hover:scale-110 transition-transform" />
                 </a>
-                <a href="#" target="_blank">
-                  <Twitter />
-                </a>
-                <a href="#" target="_blank">
-                  <Instagram />
-                </a>
-                <a href="#" target="_blank">
-                  <Twitch />
+                <a
+                  href="https://github.com/RajuCodz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors"
+                  aria-label="GitHub Profile"
+                >
+                  <Github className="h-7 w-7 text-primary hover:scale-110 transition-transform" />
                 </a>
               </div>
             </div>
@@ -130,7 +127,7 @@ export const ContactSection = () => {
                   name="name"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="Pedro Machado..."
+                  placeholder="Your name..."
                 />
               </div>
 
@@ -148,7 +145,7 @@ export const ContactSection = () => {
                   name="email"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="john@gmail.com"
+                  placeholder="your.email@example.com"
                 />
               </div>
 
@@ -165,7 +162,7 @@ export const ContactSection = () => {
                   name="message"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary resize-none"
-                  placeholder="Hello, I'd like to talk about..."
+                  placeholder="Hello, I'd like to discuss..."
                 />
               </div>
 

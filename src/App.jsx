@@ -1,18 +1,24 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
-import { NotFound } from "./pages/NotFound";
+import { Projects } from "./pages/Projects";
+import { About } from "./pages/About";
+import { Contact } from "./pages/Contact";
+import { Skills } from "./pages/Skills";
 import { Toaster } from "@/components/ui/toaster";
 
 function App() {
   return (
     <>
       <Toaster />
-      <BrowserRouter>
+      <Router>
         <Routes>
-          <Route index element={<Home />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </>
   );
 }
